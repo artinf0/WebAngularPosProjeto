@@ -22,6 +22,7 @@ export class UsuarioFormComponent implements OnInit {
 
   onSubmit(model: usuario, isValid: boolean) {
     console.log(model, isValid);
+    //Postar para o servico
   }
 
 }
