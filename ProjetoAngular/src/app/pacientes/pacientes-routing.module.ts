@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ListarComponent } from './listar/listar.component';
 import { PacientesComponent } from './pacientes.component';
-
+import { PacienteFormComponent } from './paciente-form/paciente-form.component';
 
 const routes: Routes = [
   {
@@ -11,6 +11,10 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        component: PacienteFormComponent
+      },
+      {
+        path: 'listar',
         component: ListarComponent
       }
     ]

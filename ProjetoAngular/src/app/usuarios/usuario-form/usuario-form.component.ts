@@ -10,8 +10,7 @@ export class UsuarioFormComponent implements OnInit {
   public user: usuario;
 
 
-  ngOnInit() {
-    // initialize model here
+  ngOnInit() {    
     this.user = {
       id: null,
       login: '',

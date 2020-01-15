@@ -1,0 +1,74 @@
+<div class="container">
+    <h1>Cadastro de pacientes</h1>
+
+    <form [formGroup]="formPaciente" (ngSubmit)="onSubmit()">
+
+        <mat-form-field class="form-group">            
+            <input matInput  placeholder="Nome" name="nome" id="nome" required formControlName="nome">
+            <mat-error *ngIf="nome?.invalid && (nome.dirty || nome.touched)">
+                <div *ngIf="nome.errors.required">
+                    Informe o nome.
+                </div>
+            </mat-error>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-group">            
+            <input matInput  placeholder="CPF" name="cpf" id="cpf" required formControlName="cpf">
+            <mat-error *ngIf="cpf?.invalid && (cpf.dirty || cpf.touched)">
+                <div *ngIf="cpf.errors.required">
+                    Informe o CPF.
+                </div>
+            </mat-error>
+        </mat-form-field>
+        <br>
+
+       
+        <mat-form-field class="form-group">            
+            <input matInput  placeholder="Telefone" name="telefone" id="telefone" required formControlName="telefone">
+            <mat-error *ngIf="telefone?.invalid && (telefone.dirty || telefone.touched)">
+                <div *ngIf="telefone.errors.required">
+                    Informe o telefone.
+                </div>
+            </mat-error>
+        </mat-form-field>
+        <br>
+
+
+        <mat-form-field class="form-group">            
+            <input matInput  placeholder="CEP" name="cep" id="cep" required formControlName="cep">
+            <mat-error *ngIf="cep?.invalid && (cep.dirty || cep.touched)">
+                <div *ngIf="cep.errors.required">
+                    Informe o CEP.
+                </div>
+            </mat-error>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-group">            
+            <input matInput  placeholder="Endereço" name="endereco" id="endereco" readonly formControlName="endereco">           
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-group">            
+            <input matInput  placeholder="Bairro" name="bairro" id="bairro" readonly formControlName="bairro">            
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-group">            
+            <input matInput  placeholder="Cidade" name="cidade" id="cidade" readonly formControlName="cidade">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-group">            
+            <input matInput  placeholder="Estado" name="estado" id="estado" readonly formControlName="estado">            
+        </mat-form-field>
+        <br>
+
+        <br>
+        <div mat-dialog-actions>
+            <button mat-raised-button cdkFocusInitial>Save</button>
+        </div>        
+
+    </form>
+</div>
