@@ -4,10 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-// import { PacientesModule } from './Pacientes/pacientes.module';
-// import { UsuariosModule } from './Usuarios/usuarios.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,10 +15,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule
-    // PacientesModule,
-    // UsuariosModule,
+    
+    
     
   ],
   entryComponents:[AppComponent] ,   
