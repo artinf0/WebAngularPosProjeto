@@ -6,10 +6,11 @@ import { ListarComponent } from './listar/listar.component';
 import { PacientesComponent } from './pacientes.component';
 import { PacienteFormComponent } from './paciente-form/paciente-form.component';
 import {MatFormFieldModule, MatButtonModule,MatInputModule,MatDialogModule} from '@angular/material';
+import { MasksPipe } from './masks.pipe';
 
 
 @NgModule({
-  declarations: [ListarComponent, PacientesComponent, PacienteFormComponent],
+  declarations: [ListarComponent, PacientesComponent, PacienteFormComponent, MasksPipe],
   imports: [
     CommonModule,
     PacientesRoutingModule,
