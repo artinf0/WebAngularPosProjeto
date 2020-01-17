@@ -5,7 +5,7 @@ import { PacientesRoutingModule } from './pacientes-routing.module';
 import { ListarComponent } from './listar/listar.component';
 import { PacientesComponent } from './pacientes.component';
 import { PacienteFormComponent } from './paciente-form/paciente-form.component';
-import {MatFormFieldModule, MatButtonModule,MatInputModule,MatDialogModule} from '@angular/material';
+import {MatFormFieldModule, MatButtonModule,MatInputModule,MatDialogModule, MatIconModule, MatTableModule, MatToolbarModule} from '@angular/material';
 import { MasksPipe } from './masks.pipe';
 
 
@@ -18,7 +18,9 @@ import { MasksPipe } from './masks.pipe';
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    MatIconModule,
+    MatToolbarModule,MatTableModule
   ],
   exports: [
     ListarComponent
